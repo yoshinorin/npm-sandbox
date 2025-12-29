@@ -4,5 +4,8 @@
   "description": "",
   "main": "index.js",
   "author": "yoshinorin",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "hexo": "7.0.0"
+  }
 }
