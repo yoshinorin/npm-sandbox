@@ -6,6 +6,6 @@
   "author": "yoshinorin",
   "license": "ISC",
   "dependencies": {
-    "hexo": "7.0.0"
+    "hexo": "8.1.1"
   }
 }
