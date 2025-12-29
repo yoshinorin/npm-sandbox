@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "author": "yoshinorin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yoshinorin/npm-sandbox.git"
+  },
   "license": "ISC",
   "dependencies": {
     "hexo": "8.1.1"
