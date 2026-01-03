@@ -19,7 +19,7 @@ jobs:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Verify version match
+      - name: Verify tag version
         run: |
           TAG_VERSION=${GITHUB_REF#refs/tags/v}
           PKG_VERSION=$(node -p "require('./package.json').version")
@@ -27,7 +27,7 @@ jobs:
             echo "Error: Tag version (v$TAG_VERSION) does not match package.json version ($PKG_VERSION)"
             exit 1
           fi
-          echo "Version match confirmed: $PKG_VERSION"
+          echo "Version matched: $PKG_VERSION"
 
       - run: npm ci
       - run: npm run build --if-present
